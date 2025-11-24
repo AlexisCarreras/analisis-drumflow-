@@ -2,42 +2,42 @@
 
 Proyecto personal para crear una aplicación que ayude a los bateristas a estudiar, aprender y tocar en vivo canciones nuevas, integrando:
 
-- Metronomo avanzado
-- Partes de canciones (Intro, Estrofa, Puente, Estribillo…)
-- Letras sincronizadas
-- Partituras / patrones rítmicos
-- Modo Live optimizado para escenario
-- Opcional: IA para generar o sugerir partituras
+- Metrónomo avanzado.
+- Partes de canciones (Intro, Estrofa, Puente, Estribillo).
+- Letras sincronizadas.
+- Partituras / patrónes rítmicos.
+- Modo Live optimizado para escenario.
+- Opcional: IA para generar o sugerir partituras.
 
 ---
 
-# 📌 **1. Qué tiene Drumeo, características, beneficios y qué le falta**
+# 📌 **1. Primer estudio de competencia ¿Qué tiene Drumeo, características, beneficios y qué le falta?**
 
-## ✔️ Características principales de Drumeo
-- Reproductor de canciones integrado
-- Pistas drumless y full track
-- Partituras oficiales sincronizadas
-- Marcas de secciones: Intro, Verso, Puente, Solo, Outro
-- Control de tempo (½, ¾, 1x)
-- Loop de secciones
-- Marcado de progreso
-- Recomendaciones de canciones
-- App mobile bien optimizada
+## ✔️ Características principales de Drumeo:
+- Reproductor de canciones integrado.
+- Pistas drumless y full track.
+- Partituras oficiales sincronizadas.
+- Marcas de secciones: Intro, Verso, Puente, Solo, Outro.
+- Control de tempo (½, ¾, 1x).
+- Loop de secciones.
+- Marcado de progreso.
+- Recomendaciones de canciones.
+- App mobile bien optimizada.
 
-## 🎯 Beneficios para el músico
-- Aprendizaje estructurado
-- Mayor velocidad para aprender repertorios
-- Precisión rítmica y técnica
-- Ahorro de tiempo al estudiar
+## 🎯 Beneficios para el músico:
+- Aprendizaje estructurado.
+- Mayor velocidad para aprender repertorios.
+- Precisión rítmica y técnica.
+- Ahorro de tiempo al estudiar.
 
-## ❌ Puntos débiles y oportunidades de mejora
-- No combina letra + partitura + secciones + metronomo al mismo tiempo
-- No tiene “Modo Live” minimalista
-- No tiene notas personales por sección
-- No se puede importar una canción con BPM automático
-- No integra IA para transcribir batería
-- La creación de partituras es compleja para usuarios no expertos
-- No está pensado para shows en vivo
+## ❌ Puntos débiles y oportunidades de mejora:
+- No combina letra + partitura + secciones + metrónomo al mismo tiempo.
+- No tiene “Modo Live” minimalista.
+- No tiene notas personales por sección.
+- No se puede importar una canción con BPM automático.
+- No integra IA para transcribir batería.
+- La creación de partituras es compleja para usuarios no expertos.
+- No está pensado para shows en vivo.
 
 ---
 
@@ -46,17 +46,17 @@ Proyecto personal para crear una aplicación que ayude a los bateristas a estudi
 Para satisfacer todo lo necesario, la app requiere:
 
 ### 🔊 **Audio Engine**
-- Reproducción de música
-- Sincronización con un metronomo
-- Loop de secciones
+- Reproducción de música.
+- Sincronización con un metrónomo.
+- Loop de secciones.
 - Cambios de tempo tiempo real  
   → **Tone.js** o **Web Audio API**
 
 ### 🎼 Partituras / Representación visual
 Opciones:
-- **VexFlow** (notación musical completa)
-- **OpenSheetMusicDisplay** (MusicXML compatible)
-- Editor propio tipo “blocks” orientado a batería
+- **VexFlow** (notación musical completa).
+- **OpenSheetMusicDisplay** (MusicXML compatible).
+- Editor propio tipo “blocks” orientado a batería.
 
 ### 📝 Gestión de canciones
 - Archivos
@@ -84,8 +84,6 @@ Un UI adaptado a shows:
 
 # 📌 **3. Análisis del stack actual**
 
-Tu stack es **perfecto para este proyecto**:
-
 ### ✔️ Frontend
 - **React + TypeScript** → estructura clara + mantenimiento
 - **React Query** → caching ideal para audio + metadata
@@ -98,7 +96,7 @@ Tu stack es **perfecto para este proyecto**:
 - **MySQL o PostgreSQL** → relación Song ↔ Sections ↔ Partituras
 - **Supabase / Firebase Storage** → hosting de archivos de audio
 
-### ❗ Puntos a aprender / reforzar
+### ❗ Puntos claves
 - Tone.js avanzado (Transport, Scheduler)
 - VexFlow
 - Web Audio API
@@ -176,7 +174,7 @@ Sí se puede generar una **transcripción aproximada**, suficiente para ayuda vi
 
 ---
 
-# 📌 **6. Tecnologías recomendadas para aprender**
+# 📌 **6. Tecnologías recomendadas**
 
 ## ⭐ Obligatorias
 - **Tone.js**
@@ -186,7 +184,7 @@ Sí se puede generar una **transcripción aproximada**, suficiente para ayuda vi
 ## ⭐ Altamente recomendadas
 - BasicPitch / Magenta
 - FFmpeg (para procesamiento de audio)
-- Capacitor (si querés mobile nativo)
+- Capacitor (si orientamos a mobile nativo)
 - Supabase Storage
 
 ---
@@ -337,7 +335,7 @@ POST /ai/split-drums
 
 ---
 
-# 📌 **11. Mocks de UI Inspirados en Drumeo**
+# 📌 **11. Mocks de UI Inspirados competencias**
 
 ## 🟦 Song Viewer (Estudio)
 
@@ -402,7 +400,7 @@ Tone.Transport.schedule((time) => {
 
 ---
 
-# 📌 **13. Próximos pasos sugeridos**
+# 📌 **13. Próximos pasos:**
 - Crear el boilerplate del proyecto
 - Armar Song Viewer básico
 - Implementar Tone.js con metronomo
